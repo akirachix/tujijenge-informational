@@ -7,23 +7,24 @@ body {
 
 
 h1 {
-    font-size: 400%;
+    font-size: 94px;
+    color: #C2CA83;
 }
-
-h1,
 h3 {
     color: #C2CA83;
+     font-size: 40px;
+
 }
 
 h2 {
     color: #074135;
     text-align: center;
-    font-size: xxx-large;
+    font-size: 54px;
+}
+p{
+font-size: 27px;
 }
 
-h3 {
-    font-size: xx-large;
-}
 
 .navbar {
     position: fixed;
@@ -69,7 +70,7 @@ h3 {
     text-decoration: none;
     color: #084236;
     font-family: "Nunito", sans-serif;
-    font-size: large;
+    font-size: 25px;
     font-weight: 500;
     transition: color 0.2s;
     padding: 0.25rem 0.5rem;
@@ -101,45 +102,52 @@ h3 {
 }
 
 .service-overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(serviceImg/360_F_1108685712_7CYqHdnSTipszluvU2T7TgFKwRACwhBV.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(serviceImg/cabbage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 80vh;
     position: relative;
 }
 
 #service-title {
     text-align: center;
     position: absolute;
-    font-weight: normal;
     top: 50%;
     left: 50%;
+    width: 80%;
     transform: translate(-50%, -50%);
 }
 
 .services {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    gap: 2rem;
     width: 100%;
     box-sizing: border-box;
+
+ 
+
+}
+.service{
+    display:flex;
+    gap:10%;
 }
 
 .serv {
-    width: 23vw;
-    min-width: 260px;
-    max-width: 370px;
+    width: 40vw;
     background: #fff;
-    padding: 3rem;
+    padding: 2%;
+    margin-right: 7%;
     border-radius: 18px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     transition: transform 0.2s, box-shadow 0.2s;
     margin-bottom: 2rem;
+
     box-sizing: border-box;
 }
 
@@ -147,14 +155,15 @@ h3 {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
-
+.verify{
+    padding-top:4%;
+}
 .service img {
-    width: 30%;
+    width:134px;
 }
 
 .service p {
     color: #074135;
-    font-size: large;
     text-align: center;
 }
 
@@ -168,31 +177,35 @@ h3 {
     animation-delay: 0.3s;
 }
 
-@keyframes growUnderline {
+ @keyframes growUnderline {
     from {
         width: 0;
         opacity: 0;
     }
 
     to {
-        width: 15vw;
+        width: 17%;
         opacity: 1;
-    }
+    } 
 }
 
 footer {
+    margin: 0%;
     padding-top: 4vh;
     width: 100%;
     background-color: #084236;
-    font-family: 'Poppins', sans-serif;
+    font-family: Nunito;
     align-items: center;
     box-sizing: border-box;
 }
 
 footer p {
-    font-size: large;
+    font-size: 14px;
 }
-
+footer h6{
+    font-size: 37px;
+    font-weight: normal;
+}
 .footer {
     display: flex;
     justify-content: space-between;
@@ -207,14 +220,11 @@ footer p {
 }
 
 .contacts {
-    margin-right: 10rem;
+    margin-right: 2rem;
 }
 
 .contacts h6 {
-    font-size: 1.5rem;
-    font-weight: 400;
     margin-bottom: 1rem;
-    font-family: nunito;
     color: #C2CA83;
 }
 
@@ -222,20 +232,16 @@ footer p {
     margin: 0.5rem 0;
     max-width: 15em;
     color: #C2CA83;
-}
+} 
 
 #socials {
     display: block;
-    gap: 1.5rem;
     color: #C2CA83;
 }
 
-#socials p {
-    font-size: large;
-}
+
 
 #socials h6 {
-    font-size: 1.5rem;
     margin-bottom: 1px;
 }
 
@@ -247,162 +253,76 @@ footer p {
 }
 
 .icons i {
-    font-size: 0.8rem;
+    font-size: 16px;
 }
 
-
-@media (max-width: 900px) {
-    .services {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.2rem;
-    }
-
-    .serv {
-        width: 90vw;
-        max-width: 98vw;
-        padding: 2rem;
-    }
-
-    .contacts {
-        margin-right: 0;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 95vw;
-        gap: 2rem;
-    }
-
-    .contacts p,
-    #socials p {
-        max-width: 90vw;
-        width: 100%;
-        padding-left: 0;
-    }
-
-    .service-overlay {
-        height: 40vh;
-        min-height: 270px;
-    }
-
-    .nav-center {
-        padding: 0.5rem 0.7rem;
-    }
-}
-
-@media (max-width: 700px) {
-    h1 {
-        font-size: 260%;
-    }
-
-    h2 {
-        font-size: x-large;
-    }
-
-    h3 {
-        font-size: large;
-    }
-
-    .service-overlay {
-        height: 28vh;
-        min-height: 180px;
-    }
-}
 
 @media (max-width: 540px) {
     body {
-        max-width: 100vw;
+        width: 100%;
         overflow-x: hidden;
     }
 
     h1 {
-        font-size: 190%;
+        font-size: 30px;
+        color: #C2CA83;
+        line-height: 1.2;
     }
 
     h2 {
-        font-size: large;
+        font-size: 22px;
+        color: #074135;
+        text-align: center;
+        margin: 1.5rem 0;
     }
 
     h3 {
-        font-size: medium;
+        font-size: 18px;
+        color: #C2CA83;
+        margin: 0.5rem 0;
     }
 
-    .services {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        width: 100vw;
-        padding: 0;
+    p {
+        font-size: 12px;
+        line-height: 1.4;
     }
 
-    .serv {
-        width: 96vw;
-        max-width: 98vw;
-        padding: 1.1rem;
-        min-width: unset;
-    }
-
-    .service img {
-        width: 44%;
-        min-width: 64px;
-    }
-
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 99vw;
-        gap: 1.5rem;
-        padding: 0 0.2em;
-    }
-
-    .contacts,
-    #socials {
-        margin-right: 0;
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-    }
-
-    .contacts p,
-    #socials p {
-        width: 100%;
-        max-width: 100vw;
-        font-size: medium;
-        padding-left: 0;
-    }
-
-    .service-overlay {
-        height: 22vh;
-        min-height: 100px;
+        background: #fff;
+        z-index: 10;
     }
 
     .nav-center {
-        padding: 0.5rem 0.2rem;
+        padding: 0.5rem 1rem;
     }
 
-    .underline_service {
-        width: 50vw;
-        min-width: 90px;
-        margin-bottom: 2.5rem;
+    .logo {
+        height: 4vh;
+        width: auto;
     }
 
-    @keyframes growUnderline {
-        from {
-            width: 0;
-            opacity: 0;
-        }
+    .hamburger {
+        display: flex;
+        margin-left: 0;
+        padding: 0.5rem;
+    }
 
-        to {
-            width: 50vw;
-            opacity: 1;
-        }
+    .hamburger span {
+        height: 2px;
+        width: 18px;
+        background: #084236;
+        margin: 3px 0;
+        border-radius: 2px;
     }
 
     .links {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100vw;
         background: #fff;
         flex-direction: column;
         gap: 0;
@@ -410,24 +330,255 @@ footer p {
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
         z-index: 9;
-        font-size: 10px;
         transition: max-height 0.3s ease;
+        width: 100%;
+        padding: 0;
     }
 
     .links.open {
         max-height: 350px;
-        padding: 1em 0;
+        padding: 0.5rem 0;
         border-bottom: 1px solid #eee;
-        transition: max-height 0.3s ease;
     }
 
     .links li {
         width: 100%;
         justify-content: center;
-        padding: 0.7em 0;
+        padding: 0.8rem 0;
     }
 
-    .hamburger {
-        display: flex;
+    .links li a {
+        font-size: 13px;
+        color: #084236;
+        padding: 0.6rem 1rem;
     }
+
+    .service-overlay {
+        height: 45vh;
+        min-height: 180px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(serviceImg/cabbage.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+
+    #service-title {
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .services {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0.5rem;
+        align-items: center;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .serv {
+        width: 85vw;
+        max-width: 350px;
+        padding: 1rem;
+        margin: 0 auto 1.5rem;
+        border-radius: 12px;
+    }
+
+    .service img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .verify {
+        padding-top: 1.5rem;
+    }
+
+    .underline_service {
+        width: 50%;
+        max-width: 150px;
+        height: 3px;
+        margin-bottom: 2rem;
+    }
+
+    @keyframes growUnderline {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+        to {
+            width: 50%;
+            opacity: 1;
+        }
+    }
+
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        padding: 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .contacts {
+        margin-right: 0;
+    }
+
+    .contacts h6,
+    #socials h6 {
+        font-size: 20px;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .contacts p,
+    .icons p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0.5rem 0;
+        max-width: 100%;
+        word-break: break-word;
+        padding: 0 0.5rem;
+    }
+
+    .icons {
+        gap: 12px;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .icons i {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .hamburger span {
+        width: 16px;
+        height: 1.5px;
+    }
+
+    .links li a {
+        font-size: 12px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .service-overlay {
+        height: 50vh;
+        min-height: 160px;
+    }
+
+    #service-title h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+
+    .serv {
+        width: 90vw;
+        max-width: 320px;
+        padding: 1rem;
+    }
+
+    .service img {
+        width: 80px;
+    }
+
+    .underline_service {
+        width: 60%;
+        max-width: 120px;
+    }
+
+    @keyframes growUnderline {
+        to {
+            width: 60%;
+        }
+    }
+
+    .footer {
+        gap: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    .contacts h6,
+    #socials h6 {
+        font-size: 18px;
+    }
+
+    .contacts p,
+    .icons p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .icons {
+        gap: 10px;
+    }
+}
+@media (min-width:740px){
+    .links li a {
+    text-decoration: none;
+    color: #084236;
+    font-family: "Nunito", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  
+}
+  h1{
+        font-size: 74px;
+    }
+      /* @keyframes growUnderline {
+        to {
+            width: 50%;
+        } */
+    }
+    p{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .serv {
+    width: 40vw;
+
+
+    box-sizing: border-box;
+}
+
+
 }

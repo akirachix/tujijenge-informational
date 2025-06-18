@@ -1,12 +1,12 @@
 # tujijenge-informational
 This repository contains the source code for the **Tujijenge** informational website—a platform dedicated to providing information about Tujijenge’s mission, services, team, FAQs, testimonials, and contact details.
 ---
-## :rocket: Tech Stack
+## :rocket Tech Stack
 - **HTML5** – Page structure
 - **CSS3** – Styling and responsive layout
 - **JavaScript** – Navigation, FAQ interactivity, and search
 ---
-## :page_facing_up: Main Pages
+## :page_facing_up Main Pages
 - **Home:** Overview and introduction to Tujijenge
 - **About Us:** Mission, vision, and team
 - **Services:** Details of services offered
@@ -15,7 +15,7 @@ This repository contains the source code for the **Tujijenge** informational web
 - **Testimonials:** Customer feedback
 - **Contact:** Contact information and form
 ---
-## :package: Project Structure
+## :package Project Structure
 ```
 Tujijenge/
 ├── index.html
@@ -32,7 +32,7 @@ Tujijenge/
 └── [other assets]
 ```
 ---
-## :desktop_computer: Usage
+## :desktop_computer Usage
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/meronteklehaymanotgebru/Tujijenge.git
@@ -41,7 +41,7 @@ Tujijenge/
 2. **Open any HTML file** (e.g. `index.html`) in your web browser.
    > No build step or server is required.
 ---
-## :pencil2: Customization
+## :pencil2 Customization
 - **Images & Assets:**
   Place new images in the appropriate `images/` folders and update the HTML as needed.
 - **Fonts:**
@@ -49,14 +49,14 @@ Tujijenge/
 - **Scripts:**
   JavaScript for navigation, FAQ toggling, and search is found in `index.js`.
 ---
-## :handshake: Contributing
+## :handshake Contributing
 1. Fork this repository
 2. Create your feature branch (`git checkout -b feature/YourFeature`)
 3. Commit your changes
 4. Push to your branch
 5. Open a Pull Request
 ---
-## :mailbox_with_mail: Contact
+## :mailbox_with_mail Contact
 Questions or suggestions?
 Email: **tujijenge@gmail.com**
 ---

@@ -1,0 +1,1372 @@
+body,html {
+   
+    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans';
+    max-width: 100vw;
+    margin: 0;
+ 
+    h1 {
+        font-size: 94px;
+        text-align: center;
+        color: #C2CA83;
+    }
+    h3 {
+        color: #C2CA83;
+         font-size: 40px;
+    }
+    h2 {
+        color: #074135;
+        text-align: center;
+        font-size: 54px;
+    }
+    p{
+    font-size: 27px;
+    color: #084236;
+    }
+
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    
+ }
+ 
+ 
+ .logo {
+    height: 5vh;
+    width: auto;
+    display: block;
+ }
+ 
+ 
+ .nav-center {
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+  
+ }
+ 
+ 
+ .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ 
+ 
+ 
+ .links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ .links li {
+    display: flex;
+    align-items: center;
+ }
+ 
+ 
+ .links li a {
+    text-decoration: none;
+    color: #084236;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+ }
+ 
+ 
+ .links li a:hover {
+    color: #C2CA83;
+    background: rgba(194, 202, 131, 0.08);
+ }
+ 
+ 
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 20;
+    padding: 0.5rem;
+ }
+ 
+ 
+ .hamburger-bars {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ 
+ .hamburger-bars span {
+    height: 2px;
+    width: 20px;
+    background: #084236;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+ }
+ 
+ 
+ .hamburger-close {
+    color: #084236;
+    font-size: 1.5rem;
+ }
+ 
+
+.how_it_works {
+  background-image: url(howitworks-images/stall.jpg);
+  background-color: rgba(1, 34, 9, 0.7);
+    background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;      
+  width: 100vw;
+  display: flex;
+  margin:0;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  font-weight: 600;
+}
+.main_functionality{
+  padding: 93.3px 173.3px 127.3px 173.3px;
+}
+.how_tujijenge_works {
+ 
+  
+    width: 100%;
+    margin: none;
+    background-color: white;
+
+    img {
+        width: 189.3px;
+        height: 409.3px;
+        border-radius: 27px;
+        box-shadow: 1px 0 4px 4px rgb(184, 184, 184);
+    }
+    #list-number {
+        font-size: 93.3px;
+        font-weight: normal;
+        color: #C2CA83;
+    }
+    h2{
+        text-align: center;
+    }
+
+}
+
+.underline {
+    width: 0px;
+    height: 4px;
+    background: #084236;
+    margin: 0 auto 2rem auto;
+    border-radius: 2px;
+    animation: growUnderline 0.6s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes growUnderline {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 277.3px;
+        opacity: 1;
+    }
+}
+
+.community_pictures {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 64px;
+    /* justify-content: center; */
+}
+
+
+
+.using_services {
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+
+.order-screenshots {
+    display: flex;
+    gap: 200px;
+    margin-bottom: 64px;
+}
+
+.trainings-screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 64px;
+}
+
+.inventory-screenshots {
+    display: flex;
+    gap: 200px;
+    margin-top: 64px;
+    /* justify-content: center; */
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    /* gap: 7px; */
+}
+.create-community{
+    padding-left: 200px;
+}
+.signin {
+    display: flex;
+    align-items: center;
+    padding-right: 300px;
+    justify-content: right;
+    text-align: right;
+    gap: 9.3px;
+
+
+}
+
+.signin-pic {
+
+    padding-left: 50vw;
+    margin-bottom: 64px;
+}
+
+.join_a_community {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    gap: 9.3px;
+}
+
+.ordering {
+    display: flex;
+    align-items: center;
+    padding-left: 200px;
+    gap: 9.3px;
+    margin-bottom: 64px;
+}
+
+.gain {
+    display: flex;
+    align-items: center;
+    padding-right: 300px;
+    justify-content: right;
+    text-align: right;
+    gap: 9.3px;
+    margin-bottom: 64px;
+}
+
+.inventory_management {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+    padding-left: 200px;
+    gap: 9.3px;
+}
+
+.vl {
+    border-left: 3px solid #C2CA83;
+    height: 70px;
+    animation: verticalline 0.6s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes verticalline {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 2vh;
+        opacity: 1;
+    }
+}
+
+footer {
+    margin: 0;
+    padding: 4vh 0;
+    width: 100%;
+    background-color: #084236;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #C2CA83;
+ }
+ 
+ 
+ .contacts {
+    margin-right: 1rem;
+ }
+ 
+ 
+ .contacts h6,
+ .socials h6 {
+    font-size: 37px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #C2CA83;
+ }
+ 
+ 
+ .contacts p {
+    font-size: 20px;
+    line-height: 2;
+    max-width: 15em;
+    color: #C2CA83;
+    margin: 0.5rem 0;
+ }
+ 
+ 
+ .socials {
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+ }
+ 
+ 
+ .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ 
+ 
+ .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+ }
+ 
+ 
+ .icon-item:hover {
+    transform: translateY(-3px);
+ }
+ 
+ 
+ .icon-item i {
+    font-size: 16px;
+    color: #C2CA83;
+ }
+ 
+ 
+ .icon-item p {
+    font-size: 20px;
+    margin: 0;
+    color: #C2CA83;
+ }
+
+@media (max-width: 480px) {
+
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    body,html { 
+        margin: 0;
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+        h3 {
+             font-size: 20px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p{
+        font-size: 13px;
+        }
+        
+    }
+    .main_functionality{
+        padding-top: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 0;
+      
+    }
+    .how_tujijenge_works {
+    
+        img {
+            width: 60vw;
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+
+        #list-number {
+            font-size: 2em;
+        }                                                                                                                                                                                                      
+
+    }
+    .vl{
+        height: 35px;
+    }
+
+    .underline {
+        width: 50% !important;
+    } 
+
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        padding: 4%;
+        gap: 2px;
+    }
+.join_a_community{
+    padding-right:8%;
+}
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:8%;
+        gap: 14px;
+    }
+
+     .signin-pic,.using-services-pic {
+        padding-left: 0;
+        margin: 0.5rem 0.75rem; 
+    }
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        flex-direction: column;
+        gap:2px;
+        padding: 4%;
+
+    }
+
+    .create-community {
+        padding-left: 4%;
+    }
+
+    .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    body,html { 
+        margin: 0;
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+        h3 {
+             font-size: 20px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p{
+        font-size: 13px;
+        }
+        
+    }
+    .main_functionality{
+        padding: 4%;
+    }
+    .how_tujijenge_works {
+      
+        img {
+            width: 45vw;
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+
+        #list-number {
+            font-size: 2em;
+        }   
+        .vl{
+            height: 35px;
+        }
+                                                                                                                                                                                                       
+
+    }
+
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        padding: 4%;
+        gap: 2px;
+    }
+.join_a_community{
+    padding-right:8%;
+}
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:8%;
+        gap: 14px;
+    }
+
+    .signin-pic,.using-services-pic {
+        padding-left: 0;
+        margin: 0.5rem 0.75rem; 
+    }
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        flex-direction: column;
+        gap:2px;
+        padding: 4%;
+
+    }
+
+    .create-community {
+        padding-left: 4%;
+    }
+
+    .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    }
+
+}
+@media only screen and (min-width: 640px) and (max-width: 850px) {
+
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+    body,html { 
+        margin: 0;
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+        h3 {
+             font-size: 20px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+        p{
+        font-size: 13px;
+        }
+        
+    }
+    .how_it_works{
+        h1{
+        font-size: 3rem;
+    }}
+    .main_functionality{
+        padding: 4%;
+    }
+    .how_tujijenge_works {
+       
+        img {
+            width: 30vw;
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+
+        #list-number {
+            font-size: 2.5em;
+        }        
+        .vl{
+            height: 40px;
+        }
+                                                                                                                                                                                                  
+
+    }
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        gap: 2px;
+    }
+.join_a_community{
+    padding-right:8%;
+}
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:8%;
+        gap: 14px;
+    }
+
+     .signin-pic {
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        flex-direction: column;
+        gap:2px;
+
+    }
+
+    .create-community {
+        padding-left: 4%;
+    }
+
+    .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    }
+
+}
+
+@media (min-width: 851px) and (max-width: 1023px){
+
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    body,html { 
+        margin: 0;
+         h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        p{
+        font-size: 13px;
+        }
+        
+    }
+    .how_it_works{
+        text-align: center;
+    }
+    .main_functionality{
+        padding: 4%;
+    }
+    .how_tujijenge_works {
+      
+        img {
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+
+        #list-number {
+             font-size: 3em; 
+        } 
+        .vl{
+            height: 3em;
+        }
+    
+      } 
+
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        padding: 4%;
+        gap: 7px;
+    }
+    .create-community {
+        padding: 4%;
+    }
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:10%;
+        gap: 14px;
+    } 
+
+     .signin-pic {
+        padding-left: 0;
+        margin-bottom: 2rem;
+    } 
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        gap:2px;
+        padding: 4%;
+    } 
+     .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    } 
+
+
+}
+@media (width:1024px) {
+    body,html { 
+        margin: 0;
+
+        
+    }
+    h1 {
+        font-size: 4.5rem;
+        color: #C2CA83;
+        margin: 0;
+     }
+     
+     
+     h2 {
+        color: #074135;
+        text-align: center;
+        font-size: 3rem;
+     }
+     
+     
+     h3 {
+        color: #C2CA83;
+        font-size: 2rem;
+     }
+     
+     
+     p {
+        font-size: 1.5rem;
+        color: #074135;
+     }
+     
+    
+    .how_it_works{
+        h1{
+            font-size: 4.5rem;
+        }
+
+        text-align: center;
+    }
+    .main_functionality{
+        padding: 4%;
+    }
+    .how_tujijenge_works {
+     
+        img {
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+        #list-number {
+            font-size: 4em; 
+       }  
+   .vl{
+       height: 4em;
+   }
+      } 
+
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        padding: 4%;
+        gap: 7px;
+    }
+    .create-community {
+        padding: 4%;
+    }
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:3.5%;
+        gap: 14px;
+    } 
+
+     .signin-pic {
+        padding-left: 0;
+        margin-bottom: 2rem;
+    } 
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        gap:2px;
+        padding: 4%;
+    } 
+     .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    } 
+}
+
+@media (min-width:1025px) {
+    body,html { 
+        margin: 0;
+
+        
+    }
+    h1 {
+        font-size: 4.5rem;
+        color: #C2CA83;
+        margin: 0;
+     }
+     
+     
+     h2 {
+        color: #074135;
+        text-align: center;
+        font-size: 3rem;
+     }
+     
+     
+     h3 {
+        color: #C2CA83;
+        font-size: 2rem;
+     }
+     
+     
+     p {
+        font-size: 1.5rem;
+        color: #074135;
+     }
+     
+    
+    .how_it_works{
+        h1{
+            font-size: 66px;
+        }
+
+        text-align: center;
+    }
+    .main_functionality{
+        padding: 4%;
+    }
+    .how_tujijenge_works {
+     
+        img {
+            height: auto;
+            margin: 0.5rem auto; 
+            display: block;
+        }
+        #list-number {
+            font-size: 4em; 
+       }  
+   .vl{
+       height: 4em;
+   }
+      } 
+
+     .register, .join_a_community, .ordering, .inventory_management {
+        display: flex;
+        padding:0 4% 0 4%;
+        gap: 7px;
+    }
+    .create-community {
+        padding:0 4% 0 4%;
+    }
+    .signin, .gain {
+        flex-direction:row;   
+        text-align: right;
+        padding-right:3.5%;
+        gap: 14px;
+    } 
+
+     .signin-pic {
+        padding-left: 0;
+        margin-bottom: 2rem;
+    } 
+
+    .community_pictures, .order-screenshots, 
+    .trainings-screenshots, .inventory-screenshots {
+        gap:2px;
+        padding:0 4% 0 4%;
+    } 
+     .using_services {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+    } 
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 66px;
+    }
+ 
+ 
+    h2 {
+        font-size: 2rem;
+    }
+ 
+ 
+    h3 {
+        font-size: 1.5rem;
+    }
+ 
+ 
+    p {
+        font-size: 1rem;
+    }
+ 
+    
+    .footer {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+
+.contacts,
+.socials {
+    margin-right: 0;
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacts h6,
+.socials h6 {
+    font-size: 2rem;
+}
+
+
+.contacts p,
+.icon-item p {
+    font-size: 1.2rem;
+}
+
+
+.contacts p {
+    max-width: 20rem;
+}
+
+
+.icon-item i {
+    font-size: 1.2rem;
+}
+.socials {
+display: flex;
+flex-direction: column;
+}
+
+
+.icons {
+width: 100%;
+}
+}
+@media (max-width: 960px) {
+    h1 {
+        font-size: 3rem;
+    }
+ 
+ 
+    h2 {
+        font-size: 2rem;
+    }
+ 
+ 
+    h3 {
+        font-size: 1.5rem;
+    }
+ 
+ 
+    p {
+        font-size: 1rem;
+    }
+ 
+    .hamburger {
+        display: flex;
+    }
+    
+    
+    .links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: max-height 0.3s ease;
+        padding-left: 3rem;
+    
+    
+    }
+    
+    
+    .links.open {
+        max-height: 350px;
+        padding: 0.5rem 0;
+    }
+    
+    
+    .links li {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0.8rem 2rem;
+    }
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+
+.contacts,
+.socials {
+    width: 100%;
+    margin-right: 0;
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.contacts h6,
+.socials h6 {
+    font-size: 2rem;
+}
+
+
+.contacts p,
+.icon-item p {
+    font-size: 1.2rem;
+}
+
+
+.contacts p {
+    max-width: 20rem;
+    text-align: center;
+}
+
+
+.icon-item i {
+    font-size: 1.2rem;
+}
+.socials {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+.icons {
+align-items: center;
+width: 100%;
+}
+}
+@media (max-width: 740px) {
+.hamburger {
+    display: flex;
+}
+
+
+.links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: max-height 0.3s ease;
+    padding-left: 3rem;
+
+
+}
+
+
+.links.open {
+    max-height: 350px;
+    padding: 0.5rem 0;
+}
+
+
+.links li {
+    width: 100%;
+    justify-content: flex-start;
+
+
+    padding: 0.8rem 2rem;
+}
+footer {
+    padding: 3rem 0;
+}
+
+
+.footer {
+    width: 95%;
+    gap: 1.5rem;
+}
+
+
+.contacts h6,
+.socials h6 {
+    font-size: 1.5rem;
+}
+
+
+.contacts p,
+.icon-item p {
+    font-size: 1rem;
+}
+
+
+.contacts p {
+    max-width: 18rem;
+    text-align: center;
+}
+
+
+.icon-item i {
+    font-size: 1rem;
+}
+
+
+.icon-item {
+    gap: 15px;
+}
+.icons {
+align-items: center;
+}
+}
+
+
+@media (min-width: 320px) and (max-width:400px){
+    
+.hamburger {
+            display: flex;
+        }
+        .links {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            flex-direction: column;
+            gap: 0;
+            max-height: 0;
+            overflow: hidden;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: max-height 0.3s ease;
+            padding-left: 3rem;
+        
+        
+        }
+        
+        
+        .links.open {
+            max-height: 350px;
+            padding: 0.5rem 0;
+        }
+        
+        
+        .links li {
+            width: 100%;
+            justify-content: flex-start;
+            padding: 0.8rem 2rem;
+        }
+        footer {
+            padding: 3rem 0;
+        }
+        
+        
+        .footer {
+            width: 95%;
+            gap: 1.5rem;
+        }
+        
+        
+        .contacts h6,
+        .socials h6 {
+            font-size: 1.5rem;
+        }
+        
+        
+        .contacts p,
+        .icon-item p {
+            font-size: 1rem;
+        }
+        
+        
+        .contacts p {
+            max-width: 18rem;
+            text-align: center;
+        }
+        
+        
+        .icon-item i {
+            font-size: 1rem;
+        }
+        
+        
+        .icon-item {
+            gap: 15px;
+        }
+        .icons {
+        align-items: center;
+        }
+        
+        };
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+ 
+ 
+    h2 {
+        font-size: 1.25rem;
+    }
+ 
+ 
+    h3 {
+        font-size: 1rem;
+    }
+ 
+ 
+    p {
+        font-size: 0.9rem;
+    }
+ 
+ 
+    .nav-center {
+        padding: 0.5rem 1rem;
+    }
+ 
+ 
+    .logo {
+        height: 4vh;
+    }
+ 
+
+ 
+    footer {
+        padding: 2rem 0;
+    }
+ 
+ 
+    .footer {
+        width: 90%;
+    }
+ 
+ 
+    .contacts h6,
+    .socials h6 {
+        font-size: 1.25rem;
+    }
+ 
+ 
+    .contacts p,
+    .icon-item p {
+        font-size: 0.9rem;
+    }
+ 
+ 
+    .contacts p {
+        max-width: 16rem;
+        text-align: center;
+    }
+ .icons {
+    align-items: center;
+ }
+    .icon-item i {
+        font-size: 0.9rem;
+    }
+ 
+ 
+    .icon-item {
+        gap: 10px;
+    }
+ 
+ 
+ }
+ 
+
+ @media (min-width: 1024px){
+    .footer{
+            flex-direction: row;
+    }
+}

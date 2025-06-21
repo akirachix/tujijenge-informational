@@ -1,1 +1,0 @@
-# tujijenge-informational

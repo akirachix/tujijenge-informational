@@ -1,30 +1,35 @@
 body {
     margin: 0;
-    overflow-x: hidden;
-    font-family: Plus Jakarta Sans;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     max-width: 100vw;
+    overflow-x: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 h1 {
-    font-size: 94px;
+    font-size: 4.5rem;
     color: #C2CA83;
-}
-h3 {
-    color: #C2CA83;
-     font-size: 40px;
-
+    margin: 0;
 }
 
 h2 {
     color: #074135;
     text-align: center;
-    font-size: 54px;
-}
-p{
-font-size: 27px;
+    font-size: 3rem;
 }
 
+h3 {
+    color: #C2CA83;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #074135;
+}
 
 .navbar {
     position: fixed;
@@ -52,13 +57,13 @@ font-size: 27px;
     justify-content: space-between;
 }
 
+
 .links {
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .links li {
@@ -69,10 +74,10 @@ font-size: 27px;
 .links li a {
     text-decoration: none;
     color: #084236;
-    font-family: "Nunito", sans-serif;
-    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
     font-weight: 500;
-    transition: color 0.2s;
+    transition: color 0.2s, background 0.2s;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
 }
@@ -89,20 +94,30 @@ font-size: 27px;
     background: none;
     border: none;
     z-index: 20;
+    padding: 0.5rem;
 }
 
-.hamburger span {
-    height: 1px;
+.hamburger-bars {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger-bars span {
+    height: 2px;
     width: 20px;
     background: #084236;
     margin: 3px 0;
     border-radius: 2px;
-    display: block;
     transition: 0.3s;
 }
 
+.hamburger-close {
+    color: #084236;
+    font-size: 1.5rem;
+}
+
 .service-overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(serviceImg/cabbage.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('serviceImg/cabbage.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,200 +138,406 @@ font-size: 27px;
 .services {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-    flex-wrap: wrap;
     width: 100%;
-    box-sizing: border-box;
-
- 
-
-}
-.service{
-    display:flex;
-    gap:10%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
 }
 
+.service {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
 .serv {
-    width: 40vw;
+    flex: 1 1 300px;
+    max-width: 500px;
     background: #fff;
-    padding: 2%;
-    margin-right: 7%;
+    padding: 1.5rem;
     border-radius: 18px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     margin-bottom: 2rem;
-
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
 }
 
 .serv:hover {
     transform: translateY(-6px) scale(1.03);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
-.verify{
-    padding-top:4%;
-}
-.service img {
-    width:134px;
-}
 
-.service p {
-    color: #074135;
-    text-align: center;
+.service img {
+    width: 120px;
+    height: 130px;
+    margin-bottom: 0.5rem;
 }
 
 .underline_service {
-    width: 15vw;
+    width: 15%;
+    max-width: 200px;
     height: 4px;
     background: #074135;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 3rem auto;
     border-radius: 2px;
     animation: growUnderline 0.6s ease-out forwards;
-    animation-delay: 0.3s;
 }
 
- @keyframes growUnderline {
+@keyframes growUnderline {
     from {
         width: 0;
         opacity: 0;
     }
 
     to {
-        width: 17%;
+        width: 15%;
         opacity: 1;
-    } 
+    }
 }
 
 footer {
-    margin: 0%;
-    padding-top: 4vh;
+    margin: 0;
+    padding: 4vh 0;
     width: 100%;
     background-color: #084236;
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
 
-footer p {
-    font-size: 14px;
-}
-footer h6{
-    font-size: 37px;
-    font-weight: normal;
-}
 .footer {
     display: flex;
     justify-content: space-between;
     width: 90vw;
-    padding: 0 1em;
-    margin: auto;
-    padding-bottom: 2em;
-    color: white;
-    font-family: nunito;
-    align-items: center;
-    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    color: #C2CA83;
 }
 
 .contacts {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
-.contacts h6 {
+.contacts h6,
+.socials h6 {
+    font-size: 37px;
+    font-weight: normal;
     margin-bottom: 1rem;
     color: #C2CA83;
 }
 
 .contacts p {
-    margin: 0.5rem 0;
+    font-size: 20px;
+    line-height: 2;
     max-width: 15em;
     color: #C2CA83;
-} 
-
-#socials {
-    display: block;
-    color: #C2CA83;
+    margin: 0.5rem 0;
 }
 
-
-
-#socials h6 {
-    margin-bottom: 1px;
+.socials {
+ display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .icons {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon-item {
+    display: flex;
     align-items: center;
-    margin: 0 auto;
+    gap: 20px;
+    transition: transform 0.3s ease;
 }
 
-.icons i {
+.icon-item:hover {
+    transform: translateY(-3px);
+}
+
+.icon-item i {
     font-size: 16px;
+    color: #C2CA83;
 }
 
+.icon-item p {
+    font-size: 20px;
+    margin: 0;
+    color: #C2CA83;
+}
+@media (width:912px){
 
-@media (max-width: 540px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
+    .services {
+           width: 81vw;
+           padding: 0;
+           justify-content: center;
+
+
     }
-
-    h1 {
-        font-size: 30px;
-        color: #C2CA83;
-        line-height: 1.2;
+}
+@media (width:1024px) {
+    body{
+        margin: none;
+    }
+     h1 {
+        font-size: 3rem;
     }
 
     h2 {
-        font-size: 22px;
-        color: #074135;
-        text-align: center;
-        margin: 1.5rem 0;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 18px;
-        color: #C2CA83;
-        margin: 0.5rem 0;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 1rem;
+    }
+    .navbar{
+        width: 100vw;
+
     }
 
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
+    .service-overlay {
+        height: 60vh;
+    }
+
+    .services {
+           width: 81vw;
+           padding: 0;
+           justify-content: center;
+
+
+    }
+    .service{
+        width: 50rem;
+    }
+
+    .serv {
+        flex: 1 1 45%;
+        max-width: 350px;
+    }
+
+    .underline_service {
+        width: 30%;
+    }
+
+    @keyframes growUnderline {
+        to {
+            width: 30%;
+        }
+    }
+   .footer {
+        gap: 2rem;
+        padding: 2rem 5%;
+    }
+
+    .contacts,
+    .socials {
         width: 100%;
-        background: #fff;
-        z-index: 10;
+        margin-right: 0;
     }
 
-    .nav-center {
-        padding: 0.5rem 1rem;
+    .contacts {
+        display: flex;
+        flex-direction: column;
     }
 
-    .logo {
-        height: 4vh;
-        width: auto;
+    .contacts h6,
+    .socials h6 {
+        font-size: 2rem;
     }
 
+    .contacts p,
+    .icon-item p {
+        font-size: 1.2rem;
+    }
+
+    .contacts p {
+        max-width: 20rem;
+    }
+
+    .icon-item i {
+        font-size: 1.2rem;
+    }
+.socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    align-items: center; 
+    width: 100%;
+}
+}
+
+@media (max-width: 1025px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .service-overlay {
+        height: 60vh;
+    }
+
+    .services {
+        padding: 0 5%;
+    }
+
+    .serv {
+        flex: 1 1 45%;
+        max-width: 350px;
+    }
+
+    .underline_service {
+        width: 30%;
+    }
+
+    @keyframes growUnderline {
+        to {
+            width: 30%;
+        }
+    }
+   .footer {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 5%;
+    }
+
+    .contacts,
+    .socials {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .contacts h6,
+    .socials h6 {
+        font-size: 2rem;
+    }
+
+    .contacts p,
+    .icon-item p {
+        font-size: 1.2rem;
+    }
+
+    .contacts p {
+        max-width: 20rem;
+        text-align: center;
+    }
+
+    .icon-item i {
+        font-size: 1.2rem;
+    }
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.icons {
+    align-items: center; 
+    width: 100%;
+}
+}
+@media (width:1280px){
+
+h1 {
+    font-size: 4rem;
+    color: #C2CA83;
+    margin: 0;
+}
+
+h2 {
+    color: #074135;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #C2CA83;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #074135;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 65%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+}
+
+.service {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+.serv {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+}
+
+.serv:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service img {
+    width: 120px;
+    height: 130px;
+    margin-bottom: 0.5rem;
+}
+
+}
+@media (max-width: 740px) {
     .hamburger {
         display: flex;
-        margin-left: 0;
-        padding: 0.5rem;
-    }
-
-    .hamburger span {
-        height: 2px;
-        width: 18px;
-        background: #084236;
-        margin: 3px 0;
-        border-radius: 2px;
     }
 
     .links {
@@ -328,257 +549,190 @@ footer h6{
         gap: 0;
         max-height: 0;
         overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        z-index: 9;
-        transition: max-height 0.3s ease;
         width: 100%;
-        padding: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: max-height 0.3s ease;
+        padding-left: 3rem;
+
     }
 
     .links.open {
         max-height: 350px;
         padding: 0.5rem 0;
-        border-bottom: 1px solid #eee;
     }
 
     .links li {
         width: 100%;
-        justify-content: center;
-        padding: 0.8rem 0;
+        justify-content: flex-start;
+
+        padding: 0.8rem 2rem;
     }
 
     .links li a {
-        font-size: 13px;
-        color: #084236;
-        padding: 0.6rem 1rem;
+        font-size: 1rem;
     }
 
     .service-overlay {
-        height: 45vh;
-        min-height: 180px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(serviceImg/cabbage.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-    }
-
-    #service-title {
-        width: 85%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .services {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 0.5rem;
-        align-items: center;
+        height: 50vh;
     }
 
     .service {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
     }
 
     .serv {
-        width: 85vw;
-        max-width: 350px;
-        padding: 1rem;
-        margin: 0 auto 1.5rem;
-        border-radius: 12px;
+        flex: 1 1 100%;
+        max-width: 90%;
     }
 
     .service img {
         width: 100px;
         height: auto;
-        margin-bottom: 0.5rem;
-    }
-
-    .verify {
-        padding-top: 1.5rem;
     }
 
     .underline_service {
         width: 50%;
-        max-width: 150px;
-        height: 3px;
-        margin-bottom: 2rem;
     }
 
     @keyframes growUnderline {
-        from {
-            width: 0;
-            opacity: 0;
-        }
         to {
-            width: 50%;
-            opacity: 1;
+            width: 40%;
         }
     }
-
+ 
+  
     footer {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding: 3rem 0;
     }
 
     .footer {
-        flex-direction: column;
-        align-items: center;
-        width: 90vw;
-        padding: 1rem;
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .contacts {
-        margin-right: 0;
+        width: 95%;
+        gap: 1.5rem;
     }
 
     .contacts h6,
-    #socials h6 {
-        font-size: 20px;
-        margin-bottom: 0.75rem;
-        line-height: 1.4;
+    .socials h6 {
+        font-size: 1.5rem;
     }
 
     .contacts p,
-    .icons p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin: 0.5rem 0;
-        max-width: 100%;
-        word-break: break-word;
-        padding: 0 0.5rem;
+    .icon-item p {
+        font-size: 1rem;
     }
 
-    .icons {
-        gap: 12px;
-        justify-content: center;
-        font-size: 16px;
+    .contacts p {
+        max-width: 18rem;
+        text-align: center;
     }
 
-    .icons i {
-        font-size: 16px;
+    .icon-item i {
+        font-size: 1rem;
     }
+
+    .icon-item {
+        gap: 15px;
+    }
+ .icons {
+    align-items: center;
 }
-
+}
 
 @media (max-width: 400px) {
     h1 {
-        font-size: 24px;
-        line-height: 1.3;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     p {
-        font-size: 11px;
-        line-height: 1.5;
+        font-size: 0.9rem;
     }
 
-    .hamburger span {
-        width: 16px;
-        height: 1.5px;
+    .nav-center {
+        padding: 0.5rem 1rem;
     }
 
-    .links li a {
-        font-size: 12px;
-        padding: 0.5rem 0.75rem;
+    .logo {
+        height: 4vh;
     }
 
-    .service-overlay {
-        height: 50vh;
-        min-height: 160px;
+    .links.open {
+        max-height: 350px;
+        padding: 0.5rem 0;
     }
 
-    #service-title h1 {
-        font-size: 24px;
-        line-height: 1.3;
-    }
+    .links li {
+        width: 100%;
+        justify-content: flex-start;
 
+        padding: 0.8rem 1rem;
+    }
 
     .serv {
-        width: 90vw;
-        max-width: 320px;
-        padding: 1rem;
+        max-width: 90%;
     }
 
     .service img {
         width: 80px;
+        height: auto;
     }
 
     .underline_service {
         width: 60%;
-        max-width: 120px;
     }
 
     @keyframes growUnderline {
         to {
-            width: 60%;
+            width: 40%;
         }
     }
 
+    footer {
+        padding: 2rem 0;
+    }
+
     .footer {
-        gap: 1.5rem;
-        padding: 0.75rem;
+        width: 90%;
     }
 
     .contacts h6,
-    #socials h6 {
-        font-size: 18px;
+    .socials h6 {
+        font-size: 1.25rem;
     }
 
     .contacts p,
-    .icons p {
-        font-size: 12px;
-        line-height: 1.5;
+    .icon-item p {
+        font-size: 0.9rem;
     }
 
-    .icons {
+    .contacts p {
+        max-width: 16rem;
+        text-align: center;
+    }
+.icons {
+    align-items: center; 
+}
+    .icon-item i {
+        font-size: 0.9rem;
+    }
+
+    .icon-item {
         gap: 10px;
     }
-}
-@media (min-width:740px){
-    .links li a {
-    text-decoration: none;
-    color: #084236;
-    font-family: "Nunito", sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    transition: color 0.2s;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-  
-}
-  h1{
-        font-size: 74px;
-    }
-      /* @keyframes growUnderline {
-        to {
-            width: 50%;
-        } */
-    }
-    p{
-        font-size: 20px;
-    }
-    h3{
-        font-size: 25px;
-    }
-    .serv {
-    width: 40vw;
 
-
-    box-sizing: border-box;
 }
 
+@media (min-width: 1024px){
+    .footer{
+            flex-direction: row;
+
+    }
 
 }

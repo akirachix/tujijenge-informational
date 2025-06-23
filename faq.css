@@ -21,7 +21,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 .navbar {
   position: fixed;
@@ -61,7 +61,7 @@ body {
 .links li a {
   text-decoration: none;
   color: #084236;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   transition: color 0.2s, background 0.2s;
@@ -69,7 +69,7 @@ body {
   border-radius: 4px;
 }
 .links li a:hover {
-  color: #c2ca83;
+  color: #C2CA83;
   background: rgba(194, 202, 131, 0.08);
 }
 .hamburger {
@@ -81,10 +81,12 @@ body {
   z-index: 20;
   padding: 0.5rem;
 }
+
 .hamburger-bars {
   display: flex;
   flex-direction: column;
 }
+
 .hamburger-bars span {
   height: 2px;
   width: 20px;
@@ -101,7 +103,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #c2ca83;
+  background: #C2CA83;
   width: 100%;
   padding: 4rem 3rem;
 }
@@ -110,7 +112,7 @@ body {
 }
 .faq-intro h1 {
   font-size: 66px;
-  font-family: "nunito";
+  font-family: 'nunito';
   margin: 0;
   color: #22543d;
   font-weight: normal;
@@ -124,8 +126,9 @@ body {
   font-size: 26px;
   margin-top: 40px;
   width: 30vw;
-  font-family: "nunito";
+  font-family: 'nunito';
 }
+
 .faq-search-box {
   flex: 1;
   background: none;
@@ -134,13 +137,15 @@ body {
   width: 100%;
 }
 
+
 .faq-search-box h3 {
   font-size: 26px;
   margin-bottom: 12px;
   color: #22543d;
-  font-family: "nunito";
+  font-family: 'nunito';
   font-weight: normal;
 }
+
 
 .faq-search-box form {
   display: flex;
@@ -153,8 +158,9 @@ body {
   width: 100%;
 }
 
+
 .faq-search-box input {
-  font-family: "nunito";
+  font-family: 'nunito';
   flex: 1;
   border: none;
   padding: 0.7em 1em;
@@ -163,6 +169,7 @@ body {
   background: transparent;
   width: 100%;
 }
+
 
 .faq-search-box button {
   background: #22543d;
@@ -174,13 +181,16 @@ body {
   flex: 0 0 auto;
 }
 
+
 .faq-search-box button:hover {
   background: #2f855a;
 }
 
+
 .main {
   width: 100%;
 }
+
 
 .faq-main {
   margin: 10vh auto 1vh;
@@ -190,10 +200,12 @@ body {
   width: 100%;
 }
 
+
 .faq-left {
   max-width: 45vw;
   width: 100%;
 }
+
 
 .faq-right {
   flex: 1;
@@ -202,12 +214,18 @@ body {
   min-width: 0;
 }
 
+
 .faq-section h2 {
-  font-family: "nunito";
+  font-family: 'nunito';
   margin-bottom: 12px;
   font-size: 38px;
   color: #22543d;
 }
+
+
+
+
+
 
 .faq-question {
   width: 90%;
@@ -221,18 +239,21 @@ body {
   position: relative;
 }
 
+
 .faq-question::after {
   content: "▼";
   float: right;
   transition: transform 0.3s;
 }
 
+
 .faq-item.open .faq-question::after {
   transform: rotate(-180deg);
 }
 
+
 .faq-answer {
-  font-family: "nunito";
+  font-family: 'nunito';
   max-height: 0;
   overflow: hidden;
   background: #f5f9f6;
@@ -241,36 +262,37 @@ body {
   width: 85%;
 }
 
+
 .faq-item.open .faq-answer {
   max-height: 200px;
   padding: 14px 22px 20px 35px;
 }
 
+
 .faq-item.hidden {
   display: none;
 }
 
+
 .faq-contact-form {
-  background-image: linear-gradient(
-      rgba(228, 250, 200, 0.5),
-      rgba(216, 231, 196, 0.5)
-    ),
-    url("images/editted.png");
+  background-image: linear-gradient(rgba(228, 250, 200, 0.5), rgba(216, 231, 196, 0.5)), url('images/editted.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   margin-top: 0;
   padding: 7vh 2vw;
-  font-family: "nunito";
+  font-family: 'nunito';
   width: 100%;
   max-width: 400px;
 }
+
 
 .faq-contact-form h4 {
   font-size: 17px;
   margin-bottom: 14px;
   color: #0e2e1f;
 }
+
 
 .faq-contact-form form {
   display: flex;
@@ -279,6 +301,7 @@ body {
   width: 100%;
 }
 
+
 .faq-contact-form input {
   border: none;
   border-radius: 4px;
@@ -286,9 +309,10 @@ body {
   font-size: 18px;
   background: #fff;
   outline: none;
-  font-family: "nunito";
+  font-family: 'nunito';
   width: 100%;
 }
+
 
 .faq-contact-form textarea {
   border: none;
@@ -299,9 +323,10 @@ body {
   background: #fff;
   resize: none;
   outline: none;
-  font-family: "nunito";
+  font-family: 'nunito';
   width: 100%;
 }
+
 
 .faq-contact-form button {
   background: #22543d;
@@ -312,28 +337,32 @@ body {
   border-radius: 9px;
   font-weight: 500;
   cursor: pointer;
-  font-family: "nunito";
+  font-family: 'nunito';
   width: 100%;
 }
+
 
 .faq-contact-form button:hover {
   background: #2f855a;
 }
 
+
 .testimonials {
   margin-top: 10vh;
-  font-family: "nunito";
+  font-family: 'nunito';
   background: #22543d;
   text-align: center;
   padding-top: 5vh;
   width: 100%;
 }
 
+
 .testimonials h3 {
   font-size: 38px;
   font-weight: 10;
-  color: #c2ca83;
+  color: #C2CA83;
 }
+
 
 .testimonials h2 {
   padding: 45px;
@@ -341,6 +370,7 @@ body {
   font-size: 2.2rem;
   color: white;
 }
+
 
 .testimonial-list {
   display: flex;
@@ -350,6 +380,7 @@ body {
   gap: 24px;
   width: 100%;
 }
+
 
 .testimonial-item {
   border-radius: 12px;
@@ -361,6 +392,7 @@ body {
   align-items: center;
 }
 
+
 .testimonial-item img {
   width: 120px;
   height: 120px;
@@ -369,20 +401,28 @@ body {
   margin-bottom: 5vh;
 }
 
+
 .testimonial-item p {
   font-size: 17px;
   color: #e5f0e6;
 }
+
+
+
+
 footer {
   margin: 0;
   padding: 4vh 0;
   width: 100%;
   background-color: #084236;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
+
 
 .footer {
   display: flex;
@@ -391,27 +431,40 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  color: #c2ca83;
+  color: #C2CA83;
 }
+
+
+
 
 .contacts {
   margin-right: 1rem;
 }
+
+
+
+
 .contacts h6,
 .socials h6 {
   font-size: 37px;
   font-weight: normal;
   margin-bottom: 1rem;
-  color: #c2ca83;
+  color: #C2CA83;
 }
+
+
+
 
 .contacts p {
   font-size: 20px;
   line-height: 2;
   max-width: 15em;
-  color: #c2ca83;
+  color: #C2CA83;
   margin: 0.5rem 0;
 }
+
+
+
 
 .socials {
   display: flex;
@@ -419,6 +472,9 @@ footer {
   align-items: flex-start;
   gap: 10px;
 }
+
+
+
 
 .icons {
   display: flex;
@@ -432,18 +488,35 @@ footer {
   gap: 20px;
   transition: transform 0.3s ease;
 }
+
+
+
+
 .icon-item:hover {
   transform: translateY(-3px);
 }
+
+
+
+
 .icon-item i {
   font-size: 16px;
-  color: #c2ca83;
+  color: #C2CA83;
 }
+
+
+
+
 .icon-item p {
   font-size: 20px;
   margin: 0;
-  color: #c2ca83;
+  color: #C2CA83;
 }
+
+
+
+
+
 
 @media (max-width: 480px) {
   html {
@@ -455,31 +528,40 @@ footer {
     gap: 0.8em;
     margin-top: 7vh;
   }
+
+
   .faq-intro h1 {
     padding: 2vh;
     font-size: 28px;
     width: 100%;
   }
+
+
   .highlight {
     padding: 2vh;
     font-size: 20px;
     width: 100%;
     margin: 0;
   }
+
+
   .faq-search-box {
     padding: 2vh;
     width: 100%;
     margin-top: 1vh;
 
     h3 {
-      font-size: 20px;
+      font-size: 22px;
     }
   }
+
+
   .faq-search-box input,
   .faq-search-box button {
     font-size: 18px;
     padding: 0.5em 0.4em;
   }
+
 
   .faq-main {
     flex-direction: column;
@@ -489,6 +571,7 @@ footer {
     margin: 5vh 0 48px 5vw;
   }
 
+
   .faq-left,
   .faq-right {
     width: 100%;
@@ -496,55 +579,67 @@ footer {
     padding: 0;
   }
 
+
   .faq-section h2 {
     margin-top: 5vh;
     font-size: 28px;
     margin-bottom: 2.5vw;
   }
 
+
   .faq-question {
     font-size: 19px;
     padding: 3vh 1em;
+
   }
+
 
   .faq-answer {
     font-size: 16px;
     padding: 0 13vh;
   }
 
+
   .faq-item.open .faq-answer {
     padding: 2vw 0 0 7vw;
   }
+
 
   .faq-contact-form {
     margin: 5%;
     max-width: 80%;
   }
 
+
   .faq-contact-form h4 {
     font-size: 16px;
   }
+
 
   .faq-contact-form input,
   .faq-contact-form textarea {
     padding: 10px 12px;
   }
 
+
   .faq-contact-form textarea {
     padding: 10px 10px;
     height: 25vh;
   }
+
 
   .testimonials h3 {
     margin: 2vh;
     font-size: 25px;
   }
 
+
   .testimonials h2 {
     font-size: 28px;
     margin: 0;
-    padding: 0;
+    padding: 0
   }
+
 
   .testimonial-list {
     flex-direction: column;
@@ -552,31 +647,39 @@ footer {
     width: 100%;
   }
 
+
   .testimonial-item {
     width: 100%;
     max-width: 380px;
     padding: 0.8em;
   }
 
+
   .testimonial-item img {
     width: 80px;
     height: 80px;
   }
+
 
   .testimonial-item p {
     font-size: 17px;
     width: 70vw;
   }
 
+
   [data-aos] {
     transition: none !important;
   }
 }
 
+
 @media (min-width: 481px) and (max-width: 900px) {
   html {
     font-size: 15px;
   }
+
+
+
 
   .faq-top {
     flex-direction: column;
@@ -586,11 +689,13 @@ footer {
     margin-top: 7vh;
   }
 
+
   .faq-intro h1 {
     font-size: 2rem;
     width: 100%;
     margin: 1.2em 0 0.2em 0;
   }
+
 
   .highlight {
     font-size: 1em;
@@ -598,19 +703,23 @@ footer {
     margin: 0;
   }
 
+
   .faq-search-box {
     width: 100%;
     margin-top: 1em;
   }
+
 
   .faq-search-box input {
     font-size: 1em;
     padding: 1.2em 1em;
   }
 
+
   .faq-search-box button {
     padding: 1.2em;
   }
+
 
   .faq-main {
     flex-direction: column;
@@ -620,6 +729,7 @@ footer {
     margin: 5vh 0 48px 0;
   }
 
+
   .faq-left,
   .faq-right {
     width: 100%;
@@ -627,113 +737,175 @@ footer {
     padding: 0;
   }
 
+
   .faq-section h2 {
     font-size: 2em;
     margin-bottom: 2.5vw;
   }
 
+
   .faq-question {
     font-size: 19px;
+
   }
+
 
   .faq-answer {
     font-size: 1em;
   }
+
 
   .faq-contact-form {
     padding: 5vw 2vw;
     margin: auto;
     width: 80%;
   }
+
+
+
   .testimonial-list {
     gap: 2vw;
     width: 100%;
   }
 
+
+
+
+
   .testimonial-item img {
     width: 70px;
     height: 70px;
   }
+
+
+
+
 }
+
 
 @media (min-width: 768px) and (max-width: 1280px) {
   html {
     font-size: 16px;
   }
+
   .faq-main {
     max-width: 1000px;
     gap: 2rem;
   }
+
+
   .faq-top {
     padding: 3rem;
     margin-top: 8vh;
   }
+
+
   .faq-intro h1 {
     font-size: 50px;
     width: 40vw;
   }
+
+
   .highlight {
     font-size: 22px;
     width: 40vw;
   }
+
+
   .faq-search-box input {
     font-size: 1em;
   }
+
   .faq-main {
     width: 85vw;
     padding: 0;
   }
+
   .faq-section h2 {
     font-size: 40px;
   }
+
+
   .faq-question {
     font-size: 19px;
   }
+
+
   .faq-answer {
     font-size: 18px;
   }
+
+
   .faq-contact-form {
     max-width: 650px;
     padding: 7vh 2vw;
   }
+
+
   .testimonial-list {
     gap: 1.5rem;
   }
+
   .testimonial-list {
     width: 100vw;
     margin: auto;
+
     p {
       width: 15vw;
     }
   }
+
   .testimonial-item img {
     width: 60px;
     height: 60px;
   }
+
   .faq-main {
     padding-left: 5vw;
   }
 }
+
+
+
+
 @media (min-width: 1281px) {
+
+
   .faq-main {
     max-width: 1300px;
     gap: 48px;
   }
+
+
   .faq-top {
     padding: 4rem 8vw;
     margin-top: 8vh;
   }
+
+
+
+
   .faq-contact-form {
     max-width: 800px;
     padding: 7vh 2vw;
   }
+
+
   .testimonial-list {
     gap: 36px;
   }
+
+
   .testimonial-item {
     width: 260px;
   }
+
+
 }
+
+
+
+
 @media (max-width: 1023px) {
   .footer {
     flex-direction: column;
@@ -742,31 +914,53 @@ footer {
     gap: 2rem;
     padding: 2rem 5%;
   }
+
+
+
+
   .contacts,
   .socials {
     width: 100%;
     margin-right: 0;
   }
+
+
+
+
   .contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
+
+
+
   .contacts h6,
   .socials h6 {
     font-size: 2rem;
   }
+
+
+
 
   .contacts p,
   .icon-item p {
     font-size: 1.2rem;
   }
 
+
+
+
   .contacts p {
     max-width: 20rem;
     text-align: center;
   }
+
+
+
+
   .icon-item i {
     font-size: 1.2rem;
   }
@@ -777,6 +971,10 @@ footer {
     align-items: center;
     text-align: center;
   }
+
+
+
+
   .icons {
     align-items: center;
     width: 100%;
@@ -787,6 +985,9 @@ footer {
   .hamburger {
     display: flex;
   }
+
+
+
 
   .links {
     position: absolute;
@@ -800,20 +1001,37 @@ footer {
     width: 100%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: max-height 0.3s ease;
-    padding-left: 1rem;
+    padding-left: 3rem;
+
+
+
+
   }
+
+
+
 
   .links.open {
     max-height: 350px;
     padding: 0.5rem 0;
   }
 
+
+
+
   .links li {
     width: 100%;
     justify-content: flex-start;
-    padding: 0.8rem 1rem;
+
+
+
+
+    padding: 0.8rem 2rem;
   }
 }
+
+
+
 
 @media (max-width: 400px) {
   h1 {
@@ -827,33 +1045,59 @@ footer {
     font-size: 1rem;
   }
 
+
+
+
   p {
     font-size: 0.9rem;
   }
 
+
+
+
   .nav-center {
     padding: 0.5rem 1rem;
   }
-  .logo {
+ .logo {
     height: 4vh;
   }
+
+
+
+
+
+
+
 
   footer {
     padding: 2rem 0;
   }
 
+
+
+
   .footer {
     width: 90%;
   }
+
+
+
+
   .contacts h6,
   .socials h6 {
     font-size: 1.25rem;
   }
 
+
+
+
   .contacts p,
   .icon-item p {
     font-size: 0.9rem;
   }
+
+
+
 
   .contacts p {
     max-width: 16rem;
@@ -868,9 +1112,16 @@ footer {
     font-size: 0.9rem;
   }
 
+
+
+
   .icon-item {
     gap: 10px;
   }
+
+
+
+
 }
 
 @media (min-width: 768px) {

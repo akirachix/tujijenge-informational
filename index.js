@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-         searchForm.addEventListener('submit', function(event) {
+  
+        searchForm.addEventListener('submit', function(event) {
             event.preventDefault();
         });
     }
-     // Collapsible FAQ Functionality
+  
+    // Collapsible FAQ Functionality
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
- //   FAQ contact
+//   FAQ contact
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
@@ -40,11 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Your message is submitted to tujijenge@gmail.com!');
         });
     }
-     const navToggle = document.getElementById('nav-toggle');
+  
+    const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
     const hamburgerBars = document.querySelector('.hamburger-bars');
     const hamburgerClose = document.querySelector('.hamburger-close');
-     if (navToggle && navLinks) {
+  
+    if (navToggle && navLinks) {
         navToggle.addEventListener('click', function() {
             navLinks.classList.toggle('open');
             navToggle.classList.toggle('open');
@@ -56,7 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 hamburgerClose.style.display = 'none';
             }
         });
-         document.querySelectorAll('.links a').forEach(link => {
+  
+        document.querySelectorAll('.links a').forEach(link => {
             link.addEventListener('click', () => {
                 if (window.innerWidth <= 740) {
                     navLinks.classList.remove('open');
@@ -68,5 +73,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   });
- 
- 

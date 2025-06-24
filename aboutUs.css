@@ -7,77 +7,7 @@ body {
   overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
 }
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 10;
-}
-.logo {
-  height: 5vh;
-  width: auto;
-  display: block;
-}
-.nav-center {
-  margin: 0 auto;
-  padding: 0.5rem 2rem;
-}
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.links li {
-  display: flex;
-  align-items: center;
-}
-.links li a {
-  text-decoration: none;
-  color: #084236;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.2s, background 0.2s;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-}
-.links li a:hover {
-  color: #C2CA83;
-  background: rgba(194, 202, 131, 0.08);
-}
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  background: none;
-  border: none;
-  z-index: 20;
-  padding: 0.5rem;
-}
-.hamburger-bars {
-  display: flex;
-  flex-direction: column;
-}
-.hamburger-bars span {
-  height: 2px;
-  width: 20px;
-  background: #084236;
-  margin: 3px 0;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-.hamburger-close {
-  color: #084236;
-  font-size: 1.5rem;
-}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -433,7 +363,8 @@ body {
   overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
 }
-.navbar {
+
+ .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -503,7 +434,7 @@ body {
 .hamburger-close {
   color: #084236;
   font-size: 1.5rem;
-}
+} 
 .hero {
   display: flex;
   justify-content: center;
@@ -849,4 +780,9 @@ footer {
   .links li a {
       font-size: 1.1em;
   }
+}
+
+
+.links li a{
+  font-size: 0.98em;
 }
